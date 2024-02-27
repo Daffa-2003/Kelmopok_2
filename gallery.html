@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+      /* Style untuk galeri */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+      }
+
+      /* Style untuk gambar */
+      .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      /* Style untuk footer */
+      footer {
+        text-align: center;
+        top: 0px;
+        padding: 5px;
+        background-color: #f0f0f0;
+        margin-bottom: 20px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Gallery Bos</h1>
+    <footer>
+      <h1>Galeri Foto</h1>
+    </footer>
+  <div class="gallery">
+    <!-- Gambar-gambar dalam galeri -->
+    <img src="assets/jungwon1.jpg" alt="Gambar 1">
+    <img src="assets/heeseung1.jpg" alt="Gambar 2">
+    <img src="assets/jay1.jpg" alt="Gambar 3">
+    <img src="assets/jake1.jpg" alt="Gambar 4">
+    <img src="assets/sunghoon1.jpg" alt="Gambar 5">
+    <img src="assets/sunoo2.jpg" alt="Gambar 6">
+    <img src="assets/ni-ki1.jpg" alt="Gambar 7">
+    <img src="assets/jungwon2.jpg" alt="Gambar 8">
+    <img src="assets/heeseung2.jpg" alt="Gambar 9">
+    <img src="assets/jay2.jpg" alt="Gambar 10">
+    <img src="assets/jake2.jpg" alt="Gambar 11">
+    <img src="assets/sunghoon3.jpg" alt="Gambar 12">
+    <img src="assets/sunoo3.jpg" alt="Gambar 13">
+    <img src="assets/ni-ki2.jpg" alt="Gambar 14">
+    <!-- Tambahkan lebih banyak gambar sesuai kebutuhan -->
+  </div>
+
   </body>
 </html>
