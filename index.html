@@ -3,7 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Kelompok 2</title>
   </head>
-  <body></body>
+  <style>
+    *,
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Courier New", Courier, monospace;
+    }
+    header {
+      background-color: antiquewhite;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .logo {
+      margin-right: auto;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+    nav ul {
+      display: flex;
+      padding: 10px;
+      margin-right: 20px;
+    }
+    li {
+      list-style-type: none;
+      padding: 10px;
+    }
+    li:hover {
+      transform: rotate(2deg);
+    }
+    a {
+      text-decoration: none;
+      color: #461919;
+      transition: all 0.5s ease 0s;
+    }
+    a:hover {
+      color: #e20a0a;
+    }
+  </style>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <h1 class="logo">KELOMPOK 2</h1>
+      <nav>
+        <ul>
+          <li><a href="">Pendidikan</a></li>
+          <li><a href="">Hobby</a></li>
+          <li><a href="">Gallery</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
 </html>
