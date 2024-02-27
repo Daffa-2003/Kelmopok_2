@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #17abc5;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.container {
+    max-width: 100%;
+    margin-left: 20px ;
+    margin-right: 20px ;
+    margin-bottom: 20px ;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(63, 190, 70, 0.1);
+}
+h2 {
+    color: #17abc5;
+}
+.education-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+.education-item:last-child {
+    border-bottom: none;
+}
+.school-logo {
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+}
