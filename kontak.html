@@ -1,11 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "poppins", Arial, Helvetica, sans-serif;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background: white;
+      color: rgb(0, 0, 0);
+    }
+    #contact {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .container1 {
+      width: 100%;
+      padding: 100px 15%;
+    }
+    .contact-lift {
+      flex-basis: 40%;
+    }
+    .contact-right {
+      flex-basis: 60%;
+    }
+    .contact-lift p {
+      margin-top: 30px;
+    }
+    .contact-lift p i {
+      color: red;
+      margin-right: 15px;
+      margin-top: 0px;
+      font-size: 25px;
+    }
+    .social-icon {
+      margin-top: 30px;
+    }
+    .social-icon a {
+      text-decoration: none;
+      font-size: 30px;
+      margin-right: 15px;
+      color: black;
+      display: inline-block;
+      transition: transform 0.5s;
+    }
+    .social-icon a:hover {
+      color: rgb(0, 0, 224);
+      transform: translateY(-5px);
+    }
+    .btn {
+      display: block;
+      margin: 50px auto;
+      width: fit-content;
+      border: 1px solid #ff004f;
+      padding: 14px 50px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: rgb(22, 19, 19);
+      transition: background 0.5s;
+    }
+    .btn:hover {
+      background: #ff004f;
+    }
+    .contact-right form {
+      width: 100%;
+    }
+    form input,
+    form textarea {
+      width: 100%;
+      border: 0;
+      outline: none;
+      background: #373737;
+      padding: 15px;
+      margin: 15px 0;
+      color: #ff004f;
+      font-size: 18px;
+      border-radius: 6px;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      display: flex;
+      margin: 0 auto;
+      align-items: center;
+      max-width: 95%;
+    }
+  </style>
   <body>
-    <h1>Contact</h1>
+    <div id="contact">
+      <div class="container1">
+        <div class="row">
+          <div class="contact-lift">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-regular fa-envelope"></i>daffah1rr3hh@gmail.com</p>
+            <div class="social-icon">
+              <a href="https://www.facebook.com/daffa.muhammad.52206/"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/_daffa_m.i/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://api.whatsapp.com/send/?phone=6281220729662&text&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" nama="name" placeholder="your name" required />
+              <input type="email" nama="email" placeholder="your email" required />
+              <textarea name="massage" rows="6" placeholder="Your message"></textarea>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
